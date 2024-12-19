@@ -41,6 +41,7 @@ def welcome_page(page):
                     ),
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
+                horizontal_alignment=ft.CrossAxisAlignment.CENTER,
             ),
         ],
         width=500,

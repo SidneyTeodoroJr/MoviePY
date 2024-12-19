@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 import flet as ft
 
 APPBar = ft.AppBar(
@@ -143,3 +146,107 @@ class CustomText(ft.Text):
             weight=self.weight,
             selectable=self.selectable
         )
+    
+BarChart= ft.BarChart(
+        max_y=100,
+        expand=True,
+        horizontal_grid_lines=ft.ChartGridLines(
+            color=ft.colors.WHITE24,
+            dash_pattern=[3,3],
+           interval=10,
+            width=1
+
+        ),
+
+        border=ft.border.all(width=0.3, color=ft.colors.WHITE),
+
+        bottom_axis=ft.ChartAxis(
+            labels=[
+                ft.ChartAxisLabel(
+                    value=1, label=ft.Container(ft.Text("Ação"), padding=10)
+                ),
+                ft.ChartAxisLabel(
+                    value=2, label=ft.Container(ft.Text("Comédia"), padding=10)
+                ),
+                ft.ChartAxisLabel(
+                    value=3, label=ft.Container(ft.Text("Familia"), padding=10)
+                ),
+                ft.ChartAxisLabel(
+                    value=4, label=ft.Container(ft.Text("Terror"), padding=10)
+                ),
+                ft.ChartAxisLabel(
+                    value=5, label=ft.Container(ft.Text("Animação"), padding=10)
+                )
+            ],
+            labels_size=40
+        ),
+        tooltip_bgcolor=ft.colors.SURFACE_VARIANT,
+        bar_groups=[
+            ft.BarChartGroup(
+                x= 2,
+                bar_rods=[
+                    ft.BarChartRod(
+                        from_y= 0,
+                        to_y= 40,
+                        width=30,
+                        color=ft.colors.RED_600,
+                        border_radius=0,
+                        tooltip="Comédia"
+                    )
+                ]
+            ),
+            ft.BarChartGroup(
+                x= 1,
+                bar_rods=[
+                    ft.BarChartRod(
+                        from_y= 0,
+                        to_y= 35,
+                        width=30,
+                        color=ft.colors.ORANGE_300,
+                        border_radius=0,
+                        tooltip="Ação"
+                    )
+                ]
+            ),
+            ft.BarChartGroup(
+                x= 3,
+                bar_rods=[
+                    ft.BarChartRod(
+                        from_y= 0,
+                        to_y= 20,
+                        width=30,
+                        color=ft.colors.GREEN_400,
+                        border_radius=0,
+                        tooltip="Família"
+                    )
+                ]
+            ),
+            ft.BarChartGroup(
+                x= 4,
+                bar_rods=[
+                    ft.BarChartRod(
+                        from_y= 0,
+                        to_y= 57,
+                        width=30,
+                        color=ft.colors.PURPLE_100,
+                        border_radius=0,
+                        tooltip="Terror"
+                    )
+                ]
+            ),
+            ft.BarChartGroup(
+                x= 5,
+                bar_rods=[
+                    ft.BarChartRod(
+                        from_y= 0,
+                        to_y= 17,
+                        width=30,
+                        color=ft.colors.PINK_600,
+                        border_radius=0,
+                        tooltip="Animação"
+                    )
+                ]
+            )
+
+        ]
+    )

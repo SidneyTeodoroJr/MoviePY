@@ -1,22 +1,24 @@
-import flet as ft
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
+import flet as ft
 from modules.interface_components import *  
-from welcome import welcome_page
-from history import history_page  
-from list import list_page
-from info import info_page
+
+from pages.welcome import welcome_page
+from pages.history import history_page  
+from pages.list import list_page
+from pages.info import info_page
 
 def main(page: ft.Page) -> None:
     page.title = "MoviesPY"
     page.theme_mode = ft.ThemeMode.DARK
-    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
     # Scrollbar
     page.theme = ft.Theme(
         scrollbar_theme=ft.ScrollbarTheme(thumb_color=ft.Colors.with_opacity(0.3, 'white'))
     )
 
-    # Controla o índice selecionado da NavigationBar
+    # Controls the selected index of the NavigationBar
     selected_index = 0
 
     def navigate_to_page(index: int):
@@ -33,7 +35,7 @@ def main(page: ft.Page) -> None:
             page.go("/info")
 
     def route_change(e) -> None:
-        """Função chamada quando a rota muda"""
+        """Function called when route changes"""
         page.views.clear()
 
         if page.route == "/":
@@ -66,7 +68,7 @@ def main(page: ft.Page) -> None:
 
             releases = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cWsd33Nwp3tgYB5LMMadl3qVMKh.jpg",
-                scroll="AUTO",
+                scroll="HIDDEN",
                 width=300,
                 height=450,
                 icon_size=30,
@@ -75,7 +77,7 @@ def main(page: ft.Page) -> None:
 
             films = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pnXLFioDeftqjlCVlRmXvIdMsdP.jpg",
-                scroll="AUTO",
+                scroll="HIDDEN",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -84,7 +86,7 @@ def main(page: ft.Page) -> None:
 
             series = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kGRWWvRpI2SVDYnvM3gJb21X0QL.jpg",
-                scroll="AUTO",
+                scroll="HIDDEN",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -93,7 +95,7 @@ def main(page: ft.Page) -> None:
 
             tendencies = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/gyDVzU2A8bdK4fsS4rWTsDcPPEB.jpg",
-                scroll="AUTO",
+                scroll="HIDDEN",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -102,7 +104,7 @@ def main(page: ft.Page) -> None:
 
             child_family = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8HzA55GCjRTEC2YhPGna8Lc8qHo.jpg",
-                scroll="AUTO",
+                scroll="HIDDEN",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -111,7 +113,7 @@ def main(page: ft.Page) -> None:
 
             Everyone_likes = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6AtoMpHvs9pxd30KsyK8QmJ9W9M.jpg",
-                scroll="AUTO",
+                scroll="HIDDEN",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -150,7 +152,7 @@ def main(page: ft.Page) -> None:
                         CustomText(value="Everyone likes"),
                         Everyone_likes,
                     ],
-                    scroll=ft.ScrollMode.HIDDEN,
+                    scroll="AUTO",
                     horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                 )
             )
@@ -164,8 +166,7 @@ def main(page: ft.Page) -> None:
                         history_page(),
                         nav_bar,
                     ],
-                    vertical_alignment=ft.MainAxisAlignment.CENTER,
-                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                    scroll="AUTO",
                 )
             )
 
@@ -178,6 +179,7 @@ def main(page: ft.Page) -> None:
                         list_page(),
                         nav_bar,
                     ],
+                    scroll="AUTO",
                     vertical_alignment=ft.MainAxisAlignment.CENTER,
                     horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                 )
@@ -192,8 +194,7 @@ def main(page: ft.Page) -> None:
                         info_page(),
                         nav_bar,
                     ],
-                    vertical_alignment=ft.MainAxisAlignment.CENTER,
-                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                    scroll="AUTO",
                 )
             )
 
