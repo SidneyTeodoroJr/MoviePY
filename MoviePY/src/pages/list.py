@@ -50,16 +50,52 @@ def list_page():
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3p4lA8bzyUZvjHcI1qWmasgbEo8.jpg"
         },
         {
-            "title": "Batman: O Cavaleiro das Trevas",
-            "subtitle": "Uma jornada para a justiça.",
-            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg"
+            "title": "O Rei Leão",
+            "subtitle": "O ciclo da vida nunca foi tão emocionante.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2q22B1pewjsMIkCGxtCpl8bhs0D.jpg"
         },
         {
-            "title": "O Homem de Ferro",
-            "subtitle": "O herói tecnológico que começou tudo.",
-            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
+            "title": "Vingadores: Ultimato",
+            "subtitle": "O destino do universo está em jogo.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7jvlqGsxeMKscskuUZgKk0Kuv99.jpg"
         },
+        {
+            "title": "Interestelar",
+            "subtitle": "Uma viagem para salvar o futuro.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg"
+        },
+        {
+            "title": "Matrix Resurrections",
+            "subtitle": "O futuro será reescrito.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9DT4WVqZqBEI9Kub18gZ3m1D89m.jpg"
+        },
+        {
+            "title": "O Exterminador do Futuro 2: O Julgamento Final",
+            "subtitle": "A batalha para salvar o futuro começa agora.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nb0ertLALhkUqpmcahDFplqyc0I.jpg"
+        },
+        {
+            "title": "Inception",
+            "subtitle": "Uma ideia pode mudar o destino do mundo.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k3UoZhRHg6h2XYzwNAJJvGC2yev.jpg"
+        },
+        {
+            "title": "O Senhor dos Anéis: A Sociedade do Anel",
+            "subtitle": "A aventura começa para salvar a Terra Média.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/omoMXT3Z7XrQwRZ2OGJGNWbdeEl.jpg"
+        },
+        {
+            "title": "Pantera Negra",
+            "subtitle": "O legado de um herói que não pode ser esquecido.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ubXNpxL2ASSzY0f8Hxv08pOsV2L.jpg"
+        },
+        {
+            "title": "Guardiões da Galáxia",
+            "subtitle": "A galáxia nunca esteve tão em risco.",
+            "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xaY92XMToaSnBuvCui3LHzNGqZB.jpg"
+        }
     ]
+
 
     # Render the list items
     list_tiles = [

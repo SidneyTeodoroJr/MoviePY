@@ -5,9 +5,6 @@ import flet as ft
 from modules.interface_components import CustomText
 import webbrowser 
 
-def repo(e):
-        webbrowser.open("https://github.com/SidneyTeodoroJr/MoviePY")  
-
 def info_page():
     return ft.Column(
         [
@@ -26,15 +23,6 @@ def info_page():
             CustomText(value="+55 (27) 99648-9123", color=ft.Colors.GREY_500, size=16),
             CustomText(value="sidneyteodoro2002@gmail.com", color=ft.Colors.GREY_500, size=16),
             CustomText(value="@sidney_teodoro_araujo", color=ft.Colors.GREY_500, size=16),
-
-            ft.IconButton(
-                    icon=ft.icons.CODE_SHARP,
-                    icon_color="white",
-                    icon_size=30,
-                    tooltip="Repository",
-                    on_click=lambda e: repo(e),
-            ),
-
 
             CustomText(value="Importante", color=ft.Colors.RED_500),
 

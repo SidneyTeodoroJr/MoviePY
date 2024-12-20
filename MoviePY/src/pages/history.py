@@ -61,7 +61,6 @@ chart = ft.PieChart(
 def history_page():
     return ft.Column(
         [
-            CustomText(value="History Acesse", size=24, weight=ft.FontWeight.BOLD),
             CustomText(value="Here you can see the history of your most watched content.", color=ft.Colors.GREY_500),
 
             BarChart,

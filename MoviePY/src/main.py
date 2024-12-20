@@ -68,7 +68,7 @@ def main(page: ft.Page) -> None:
 
             releases = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cWsd33Nwp3tgYB5LMMadl3qVMKh.jpg",
-                scroll="HIDDEN",
+                scroll="AUTO",
                 width=300,
                 height=450,
                 icon_size=30,
@@ -77,7 +77,7 @@ def main(page: ft.Page) -> None:
 
             films = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pnXLFioDeftqjlCVlRmXvIdMsdP.jpg",
-                scroll="HIDDEN",
+                scroll="AUTO",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -86,7 +86,7 @@ def main(page: ft.Page) -> None:
 
             series = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kGRWWvRpI2SVDYnvM3gJb21X0QL.jpg",
-                scroll="HIDDEN",
+                scroll="AUTO",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -95,7 +95,7 @@ def main(page: ft.Page) -> None:
 
             tendencies = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/gyDVzU2A8bdK4fsS4rWTsDcPPEB.jpg",
-                scroll="HIDDEN",
+                scroll="AUTO",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -104,7 +104,7 @@ def main(page: ft.Page) -> None:
 
             child_family = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8HzA55GCjRTEC2YhPGna8Lc8qHo.jpg",
-                scroll="HIDDEN",
+                scroll="AUTO",
                 width=150,
                 height=225,
                 icon_size=20,
@@ -113,12 +113,12 @@ def main(page: ft.Page) -> None:
 
             Everyone_likes = MovieCard(
                 src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6AtoMpHvs9pxd30KsyK8QmJ9W9M.jpg",
-                scroll="HIDDEN",
+                scroll="AUTO",
                 width=150,
                 height=225,
                 icon_size=20,
                 on_click=child_family_click,
-            ).build(count=9)
+            ).build(count=10)
 
             ft.floating_action_button = ft.FloatingActionButton(
                 icon=ft.Icons.SEARCH,
@@ -163,6 +163,7 @@ def main(page: ft.Page) -> None:
                 ft.View(
                     route="/history",
                     controls=[
+                        APPBar,
                         history_page(),
                         nav_bar,
                     ],
@@ -176,6 +177,7 @@ def main(page: ft.Page) -> None:
                 ft.View(
                     route="/list",
                     controls=[
+                        APPBar,
                         list_page(),
                         nav_bar,
                     ],
@@ -191,6 +193,7 @@ def main(page: ft.Page) -> None:
                 ft.View(
                     route="/info",
                     controls=[
+                        APPBar,
                         info_page(),
                         nav_bar,
                     ],

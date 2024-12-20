@@ -12,8 +12,8 @@ APPBar = ft.AppBar(
 
 def create_navbar(navigate_to_page, selected_index):
     return ft.NavigationBar(
-        selected_index=selected_index,  # Passa o índice selecionado
-        on_change=lambda e: navigate_to_page(e.control.selected_index),  # Passa o índice da navegação
+        selected_index=selected_index,  # Pass the selected index
+        on_change=lambda e: navigate_to_page(e.control.selected_index),  # Pass the navigation index
         destinations=[
             ft.NavigationBarDestination(
                 icon=ft.Icons.HOME_OUTLINED,
@@ -65,8 +65,8 @@ class MovieCard:
                     ], alignment=ft.MainAxisAlignment.END),
                     bgcolor=ft.Colors.with_opacity(0.3, ft.Colors.BLACK),
                     alignment=ft.alignment.center,
-                    width=self.width,  # Largura
-                    height=self.height,  # Altura
+                    width=self.width,  
+                    height=self.height,  
                     ink=True,
                     on_click=self.on_click,
                 ) for _ in range(count)
@@ -163,19 +163,19 @@ BarChart= ft.BarChart(
         bottom_axis=ft.ChartAxis(
             labels=[
                 ft.ChartAxisLabel(
-                    value=1, label=ft.Container(ft.Text("Ação"), padding=10)
+                    value=1, label=ft.Container(ft.Text("Action"), padding=10)
                 ),
                 ft.ChartAxisLabel(
-                    value=2, label=ft.Container(ft.Text("Comédia"), padding=10)
+                    value=2, label=ft.Container(ft.Text("Comedy"), padding=10)
                 ),
                 ft.ChartAxisLabel(
-                    value=3, label=ft.Container(ft.Text("Familia"), padding=10)
+                    value=3, label=ft.Container(ft.Text("Family"), padding=10)
                 ),
                 ft.ChartAxisLabel(
                     value=4, label=ft.Container(ft.Text("Terror"), padding=10)
                 ),
                 ft.ChartAxisLabel(
-                    value=5, label=ft.Container(ft.Text("Animação"), padding=10)
+                    value=5, label=ft.Container(ft.Text("Animation"), padding=10)
                 )
             ],
             labels_size=40
@@ -191,7 +191,7 @@ BarChart= ft.BarChart(
                         width=30,
                         color=ft.colors.RED_600,
                         border_radius=0,
-                        tooltip="Comédia"
+                        tooltip="Comedy"
                     )
                 ]
             ),
@@ -204,7 +204,7 @@ BarChart= ft.BarChart(
                         width=30,
                         color=ft.colors.ORANGE_300,
                         border_radius=0,
-                        tooltip="Ação"
+                        tooltip="Action"
                     )
                 ]
             ),
@@ -217,7 +217,7 @@ BarChart= ft.BarChart(
                         width=30,
                         color=ft.colors.GREEN_400,
                         border_radius=0,
-                        tooltip="Família"
+                        tooltip="Family"
                     )
                 ]
             ),
@@ -243,7 +243,7 @@ BarChart= ft.BarChart(
                         width=30,
                         color=ft.colors.PINK_600,
                         border_radius=0,
-                        tooltip="Animação"
+                        tooltip="Animation"
                     )
                 ]
             )
