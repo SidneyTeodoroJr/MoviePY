@@ -159,6 +159,7 @@ def main(page: ft.Page) -> None:
 
         elif page.route == "/history":
             nav_bar = create_navbar(navigate_to_page, selected_index)
+            
             page.views.append(
                 ft.View(
                     route="/history",

@@ -45,53 +45,53 @@ def list_page():
 
     items = [
         {
-            "title": "Mulher Maravilha: Linhagem de Sangue",
-            "subtitle": "Todos merecem a chance de voar.",
+            "title": "Wonder Woman: Bloodlines",
+            "subtitle": "Everyone deserves the chance to fly.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3p4lA8bzyUZvjHcI1qWmasgbEo8.jpg"
         },
         {
-            "title": "O Rei Leão",
-            "subtitle": "O ciclo da vida nunca foi tão emocionante.",
+            "title": "The Lion King",
+            "subtitle": "The circle of life has never been so exciting.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2q22B1pewjsMIkCGxtCpl8bhs0D.jpg"
         },
         {
-            "title": "Vingadores: Ultimato",
-            "subtitle": "O destino do universo está em jogo.",
+            "title": "Avengers: Endgame",
+            "subtitle": "The fate of the universe hangs in the balance.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7jvlqGsxeMKscskuUZgKk0Kuv99.jpg"
         },
         {
-            "title": "Interestelar",
-            "subtitle": "Uma viagem para salvar o futuro.",
+            "title": "Interstellar",
+            "subtitle": "A Journey to Save the Future.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg"
         },
         {
             "title": "Matrix Resurrections",
-            "subtitle": "O futuro será reescrito.",
+            "subtitle": "The future will be rewritten.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9DT4WVqZqBEI9Kub18gZ3m1D89m.jpg"
         },
         {
-            "title": "O Exterminador do Futuro 2: O Julgamento Final",
-            "subtitle": "A batalha para salvar o futuro começa agora.",
+            "title": "Terminator 2: Judgment Day",
+            "subtitle": "The battle to save the future begins now.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nb0ertLALhkUqpmcahDFplqyc0I.jpg"
         },
         {
             "title": "Inception",
-            "subtitle": "Uma ideia pode mudar o destino do mundo.",
+            "subtitle": "One idea can change the destiny of the world.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k3UoZhRHg6h2XYzwNAJJvGC2yev.jpg"
         },
         {
-            "title": "O Senhor dos Anéis: A Sociedade do Anel",
-            "subtitle": "A aventura começa para salvar a Terra Média.",
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "subtitle": "The adventure begins to save Middle-earth.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/omoMXT3Z7XrQwRZ2OGJGNWbdeEl.jpg"
         },
         {
-            "title": "Pantera Negra",
-            "subtitle": "O legado de um herói que não pode ser esquecido.",
+            "title": "Black Panther",
+            "subtitle": "The legacy of a hero that cannot be forgotten.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ubXNpxL2ASSzY0f8Hxv08pOsV2L.jpg"
         },
         {
-            "title": "Guardiões da Galáxia",
-            "subtitle": "A galáxia nunca esteve tão em risco.",
+            "title": "Guardians of the Galaxy",
+            "subtitle": "The galaxy has never been more at risk.",
             "image_url": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xaY92XMToaSnBuvCui3LHzNGqZB.jpg"
         }
     ]
@@ -112,5 +112,5 @@ def list_page():
         list_tiles,
         alignment=ft.MainAxisAlignment.CENTER,
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-        spacing=50,
+        spacing=30,
     )

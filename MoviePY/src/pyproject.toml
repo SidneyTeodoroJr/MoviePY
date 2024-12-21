@@ -1,0 +1,11 @@
+[project]
+name = "MoviePY"
+version = "0.0.3"
+description = "Movie APP"
+authors = [
+  {name = "Sidney T. A. Junior", email = "sidneyteodoro2002@gmail.com"}
+]
+dependencies = ["flet==0.25.2"]
+
+[tool.flet]
+build_number = 1
