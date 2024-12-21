@@ -214,4 +214,4 @@ def main(page: ft.Page) -> None:
     page.go(page.route)
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.app(main, view=ft.AppView.WEB_BROWSER, web_renderer=ft.WebRenderer.HTML)
