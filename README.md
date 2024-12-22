@@ -14,8 +14,8 @@
 
 <h2>Download the Application</h2>
 
-<a href="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/build_platforms/MoviePY.apk" target="_blank" download>Android</a> </br>
-<a href="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/build_platforms/MoviePY%20-%20Win.rar" target="_blank">Windows</a>
+<a href="https://raw.githubusercontent.com/SidneyTeodoroJr/MoviePY/main/build_platforms/MoviePY.apk" download>Android</a></br>
+<a href="https://raw.githubusercontent.com/SidneyTeodoroJr/MoviePY/main/build_platforms/MoviePY - Win.rar" download>Windows</a>
 
 <h2>Features</h2>
 
