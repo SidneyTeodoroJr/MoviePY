@@ -27,10 +27,10 @@
 
 
 <div align="center">
-  <img width="450" src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-1.png" alt="Banner Inventory Manager"> 
-  <img width="450" src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-3.png" alt="Banner Inventory Manager"> 
-  <img width="450" src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-4.png" alt="Banner Inventory Manager"> 
-  <img width="450" src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-5.png" alt="Banner Inventory Manager"> 
+  <img  src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-1.png" alt="Banner Inventory Manager"> </br></br>
+  <img  src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-3.png" alt="Banner Inventory Manager"> </br></br> 
+  <img  src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-4.png" alt="Banner Inventory Manager"> </br></br>
+  <img  src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-pc-5.png" alt="Banner Inventory Manager"> </br></br>
 </div>
 
 <h2>Motivation</h2>
