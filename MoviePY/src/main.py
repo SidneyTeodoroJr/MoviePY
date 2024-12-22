@@ -2,7 +2,7 @@ import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 import flet as ft
-from modules.interface_components import *  
+from modules.interface_components import CustomText, MovieCard, create_navbar, APPBar
 
 from pages.welcome import welcome_page
 from pages.history import history_page  
@@ -214,4 +214,4 @@ def main(page: ft.Page) -> None:
     page.go(page.route)
 
 if __name__ == "__main__":
-    ft.app(main, view=ft.AppView.WEB_BROWSER, web_renderer=ft.WebRenderer.HTML)
+    ft.app(main)

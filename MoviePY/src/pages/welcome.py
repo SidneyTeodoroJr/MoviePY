@@ -12,12 +12,12 @@ def welcome_page(page):
         "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTV6aTlxMTIxMXgyMnp3Nm1sd3lhOXkyenpmcWg2YTJrMTUxcTc3biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tBpYqkMgAPaWA/giphy.webp"
     ]
     
-    # Escolher uma imagem aleatória da lista
+    # Choose a random image from the list
     random_image = random.choice(gif)
     
     return ft.Stack(
         [
-            # Exibir a imagem aleatória
+            
             ft.Image(
                 src=random_image,
                 repeat=ft.ImageRepeat.NO_REPEAT,
@@ -27,7 +27,7 @@ def welcome_page(page):
                 height=500,
             ),
             
-            # Outros componentes (Texto e Botão)
+            # Other components (Text and Button)
             ft.Column(
                 [
                     CustomText(value="Welcome to MoviesPY!", size=35),
