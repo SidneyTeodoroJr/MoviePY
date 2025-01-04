@@ -69,15 +69,15 @@
   <img width="200" src="https://github.com/SidneyTeodoroJr/MoviePY/blob/main/design/print-5.jpeg" alt="Banner Inventory Manager">
 </div>
 
-<h2>Instruções de Execução</h2>
+<h2>Execution Instructions</h2>
 
-1. Instale as dependências necessárias usando:
+1. Install the required dependencies using:
     ```shell
     pip install -r MoviePY\src\requirements.txt
-2. Execute o aplicativo Streamlit com o comando streamlit:
+2. Run the Flet application with the command:
    ```shell
    flet -r MoviePY
-3. Acesse a aplicação na janela padrão do seu sistema.
+3. Access the application in your system's default window.
 
 <h2>Disclaimer</h2>
 
